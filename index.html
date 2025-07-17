@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bay ridge Clinic Dashboard</title>
+    <title>Bay Ridge Clinic Dashboard</title>
     <script>
-        const correctPassword = "bay ridge2024";
-        const passwordInput = prompt("Enter password for Bay ridge Clinic Dashboard:");
+        const correctPassword = "Bay Ridge2024";
+        const passwordInput = prompt("Enter password for Bay Ridge Clinic Dashboard:");
         const password = passwordInput ? passwordInput.trim() : "";
         if (!password || password !== correctPassword) {
             alert("Access denied - Incorrect password");
@@ -15,13 +15,13 @@
     </script>
 </head>
 <body>
-    <h1>Bay ridge Clinic Dashboard</h1>
+    <h1>Bay Ridge Clinic Dashboard</h1>
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bay ridge Clinic Dashboard</title>
+        <title>Bay Ridge Clinic Dashboard</title>
         <!-- Google Charts Library -->
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <!-- Date Range Picker Dependencies -->
@@ -922,7 +922,7 @@
             <div class="filter-group" style="display: none;">
                 <label>Filter by Clinic:</label>
                 <select id="clinicFilter" onchange="filterTable()" disabled>
-                    <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                    <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -1025,7 +1025,7 @@
                         <div class="filter-group" style="display: none;">
                             <label>Select Clinic:</label>
                             <select id="clinicSelector" onchange="updateHistoricalCharts()" disabled>
-                                <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                                <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                             </select>
                         </div>
                         <div class="filter-group">
@@ -1055,7 +1055,7 @@
                         <div class="filter-group" style="display: none;">
                             <label>Select Clinic:</label>
                             <select id="compareClinicSelectorW2W" disabled>
-                                <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                                <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                             </select>
                         </div>
                         <button class="action-button" onclick="runComparison('week-to-week')" disabled>Run Comparison</button>
@@ -1065,7 +1065,7 @@
                         <div class="filter-group" style="display: none;">
                             <label>Select Clinic:</label>
                             <select id="compareClinicSelector4W" disabled>
-                                <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                                <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                             </select>
                         </div>
                         <div class="filter-group">
@@ -1084,7 +1084,7 @@
                         <div class="filter-group" style="display: none;">
                             <label>Select Clinic:</label>
                             <select id="compareClinicSelectorCR" disabled>
-                                <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                                <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                             </select>
                         </div>
                         <div class="filter-group">
@@ -1614,11 +1614,11 @@
                 const weekSet = new Set();
                 let processedEntryCount = 0;
     
-                // Group data by clinic - filter for Bay ridge only
+                // Group data by clinic - filter for Bay Ridge only
                 parsedData.forEach(entry => {
                     const clinicName = entry.Clinic;
-                    // Only process Bay ridge clinic data
-                    if (clinicName === 'Bay ridge') {
+                    // Only process Bay Ridge clinic data
+                    if (clinicName === 'Bay Ridge') {
                         if (!allClinicsData[clinicName]) {
                             allClinicsData[clinicName] = [];
                         }
@@ -1881,8 +1881,8 @@
                         const val=parseFloat(r[col]); if(!isNaN(val)) r[col]=val;
                     });
                     const clinic=r.Clinic;
-                    // Only process Bay ridge clinic data
-                    if(clinic === 'Bay ridge') {
+                    // Only process Bay Ridge clinic data
+                    if(clinic === 'Bay Ridge') {
                         if(!allClinicsDailyData[clinic]) allClinicsDailyData[clinic]=[];
                         allClinicsDailyData[clinic].push(r);
                     }
@@ -2028,8 +2028,8 @@
                 dates.forEach(d=>{headerRow+=`<th class="pivot-date">${moment(d).format('MMM D, YYYY')}</th>`;});
                 headerRow+='</tr>';
                 thead.innerHTML=headerRow;
-                // clinics rows - filter for Bay ridge only
-                const clinics=Object.keys(allClinicsDailyData).filter(clinic => clinic === 'Bay ridge').sort((a,b)=>a.localeCompare(b));
+                // clinics rows - filter for Bay Ridge only
+                const clinics=Object.keys(allClinicsDailyData).filter(clinic => clinic === 'Bay Ridge').sort((a,b)=>a.localeCompare(b));
                 clinics.forEach(clinic=>{
                     let rowHtml=`<tr><td class="clinic-name">${clinic}</td>`;
                     let achievedSum=0, targetSum=0, higherIsBetter=true;
@@ -2095,8 +2095,8 @@
                 dates.forEach(d=>{headerRow+=`<th class="pivot-date">${moment(d).format('MMM D, YYYY')}</th>`;});
                 headerRow+='</tr>';
                 thead.innerHTML=headerRow;
-                // clinics rows - filter for Bay ridge only
-                const clinics=Object.keys(allClinicsDailyData).filter(clinic => clinic === 'Bay ridge').sort((a,b)=>a.localeCompare(b));
+                // clinics rows - filter for Bay Ridge only
+                const clinics=Object.keys(allClinicsDailyData).filter(clinic => clinic === 'Bay Ridge').sort((a,b)=>a.localeCompare(b));
                 clinics.forEach(clinic=>{
                     let rowHtml=`<tr><td class="clinic-name">${clinic}</td>`;
                     let achievedSum=0, targetSum=0, higherIsBetter=true;
@@ -3904,28 +3904,28 @@ function generateDailyMetricCell(row, metricId){
             {
                 'Date of meeting': '01-15-2024',
                 'Done': 'TRUE',
-                'Clinic': 'Bay ridge',
+                'Clinic': 'Bay Ridge',
                 'Metric': 'Patient Satisfaction',
                 'Notes': 'Implemented new feedback system, satisfaction scores improved by 15%'
             },
             {
                 'Date of meeting': '01-15-2024',
                 'Done': 'FALSE',
-                'Clinic': 'Bay ridge',
+                'Clinic': 'Bay Ridge',
                 'Metric': 'Wait Times',
                 'Notes': 'Need to optimize scheduling system to reduce average wait time'
             },
             {
                 'Date of meeting': '01-22-2024',
                 'Done': 'TRUE',
-                'Clinic': 'Bay ridge',
+                'Clinic': 'Bay Ridge',
                 'Metric': 'Staff Training',
                 'Notes': 'Completed customer service training for all front desk staff'
             },
             {
                 'Date of meeting': '01-22-2024',
                 'Done': 'FALSE',
-                'Clinic': 'Bay ridge',
+                'Clinic': 'Bay Ridge',
                 'Metric': 'Equipment Maintenance',
                 'Notes': 'Schedule maintenance for MRI machine next week'
             }
@@ -3951,11 +3951,11 @@ function generateDailyMetricCell(row, metricId){
                 return getSampleMeetingNotesData();
             }
             
-            // Filter for Bay ridge clinic only
-            const bay ridgeData = parsedData.filter(note => note.Clinic === 'Bay ridge');
-            console.log(`Filtered ${bay ridgeData.length} Bay ridge clinic meeting notes from ${parsedData.length} total records`);
+            // Filter for Bay Ridge clinic only
+            const BayRidgeData = parsedData.filter(note => note.Clinic === 'Bay Ridge');
+            console.log(`Filtered ${BayRidgeData.length} Bay Ridge clinic meeting notes from ${parsedData.length} total records`);
             
-            return bay ridgeData;
+            return BayRidgeData;
         } catch (error) {
             console.warn("Error fetching meeting notes data from Google Sheets:", error.message);
             console.log("Using sample data instead.");
@@ -4096,7 +4096,7 @@ function generateDailyMetricCell(row, metricId){
                 <div class="filter-item" style="display: none;">
                     <label>Clinic Filter:</label>
                     <select id="meetingClinicFilter">
-                        <option value="Bay ridge" selected>Bay ridge Clinic</option>
+                        <option value="Bay Ridge" selected>Bay Ridge Clinic</option>
                     </select>
                 </div>
                 <div class="filter-item">
